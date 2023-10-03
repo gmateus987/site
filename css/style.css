@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  position: relative;
+
+}
+
+button {
+  background-color: #333;
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+
+h2 {
+  font-size: 4vh;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 1.1vh;
+  overflow: hidden;
+  background-color: #333;
+  padding: 3px;
+  color: white;
+}
+
+html {
+  background-color: whitesmoke;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: #333;
+  font-size: 5vh;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  margin-top: 40px;
+  bottom: 0px;
+}
+
+p {
+  margin-top: 15px;
+  color: white;
+  font-size: 2.3vh;
+
+}
+
+.more_about {
+  float: left;
+}
+
+.more_about a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  background-color: #333;
+  font-weight: bold;
+}
+
+/* Change the link color to #111 (black) on hover */
+button a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+address {
+  margin-bottom: 10px;
+}
+
+#about {
+  margin-top: -4px;
+}
+
+.img {
+  max-width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  object-fit:fill;
+}
+
+.img:hover img {
+  -webkit-transform: scale(1);
+  transform: scale(1.03);
+}
+
+body {
+  background-image: url("../images/background.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.location {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 100%;
+}
+
+#pagetitle {
+  color: white;
+}
+
+#icon {
+  width: 48px;
+  height: 48px;
+}
+
+input,
+textarea {
+  color: black;
+  font-size: 1rem;
+}
+
+.submit_button {
+  padding-top: 2px;
+  width: 8vw;
+  height: 3vh;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  justify-self: center;
+  font-weight: bold;
+}
+
+.submit_button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.sup_title {
+  text-align: center;
+  font-size: 4vh;
+  font-weight: bold;
+}
+
+.sup_text {
+  padding-left: 12px;
+  font-size: 2vh;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.container_form {
+  display: flex;
+  left: 20vw;
+  top: 4vh;
+  padding: 0px;
+  border: 10px solid #333;
+  background-color: #333;
+  width: 35%;
+  height: fit-content;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+#name,
+#email,
+#description {
+  display: flex;
+  margin-left: 10px;
+  width: 95%;
+}
+
+.bg_img {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  height: 55vh;
+  top: 20px;
+  border: 0.8vh solid #333;
+  position: absolute;
+  
+}
+
+.element {
+  padding-bottom: 15px;
+}
+
+.main {
+  padding: 3vh 12vh 3vh 12vh;
+}
+
+.indication_bttn {
+  font-size: 2.1vh;
+}
+
+a:active {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .main {
+    padding: 1em 1em;
+  }
+
+  .bg_img {
+    display: none;
+  }
+
+  .container_form {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    left: 0;
+  }
+
+  .submit_button {
+    font-size: 5vw;
+    width: 5em;
+    height: 1.7em;
+    font-weight: bold; 
+  }
+
+  .location {
+    max-width: 100%;
+    align-self: center;
+  }
+
+  .indication_bttn {
+    font-size: 1.2em;
+  }
+
+  .img {
+    max-width: 100%;
+    height: 8em;
+  }
+
+  .location_text {
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  .location_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
